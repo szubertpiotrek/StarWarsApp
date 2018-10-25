@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SoftwarePlant:build"
+            "browserTarget": "StarWarsApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SoftwarePlant:build:production"
+              "browserTarget": "StarWarsApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SoftwarePlant:build"
+            "browserTarget": "StarWarsApp:build"
           }
         },
         "test": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SoftwarePlant:serve"
+            "devServerTarget": "StarWarsApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SoftwarePlant:serve:production"
+              "devServerTarget": "StarWarsApp:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "SoftwarePlant"
+  "defaultProject": "StarWarsApp"
 }
