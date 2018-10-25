@@ -12,7 +12,7 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  public title = 'SoftwarePlant';
+  public title = 'StarWarsApp';
   public page: number = 1;
   public limit: number = 5;
   public search: string;
