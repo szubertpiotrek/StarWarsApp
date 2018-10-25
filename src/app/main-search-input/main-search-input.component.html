@@ -1,0 +1,4 @@
+<form (ngSubmit)="onSubmit(text)" #form="ngForm" class="form">
+  <input placeholder="Search a planet..." class="form-control form__input" type="text" name="text" [(ngModel)]="text" required>
+  <button type="submit"  class="btn form__btn">Submit</button>
+</form>

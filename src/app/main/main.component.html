@@ -1,0 +1,22 @@
+<div class="main__backgroud">
+  <div class="container">
+    <div class="main__logo">
+      <img src="/src/Starwars-logo.png" class="main__logo--img"/>
+    </div>
+    <div>
+      <div class="main__search">
+        <app-main-search-input [page]="page" (search)="searching($event)" (newPage)="nextPages($event)" (searchInfo)="searchInfo($event)" (newLimit)="newLimits($event)"></app-main-search-input>
+        <div class="main__search--nav">
+          <app-main-left-button [page]="page" (newPage)="prevPages($event)"></app-main-left-button>
+          <app-main-right-button [page]="page" (newPage)="nextPages($event)" (searchInfo)="searchInfo($event)"></app-main-right-button>
+          <app-main-show-elements (limit)="newLimits($event)" (newPage)="nextPages($event)" [newLimit]="limit"></app-main-show-elements>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main__list">
+  <app-main-list [limit]="limit" [page]="page" [search]="search" [searchInfo]="searchInfos"></app-main-list>
+</div>
+
+

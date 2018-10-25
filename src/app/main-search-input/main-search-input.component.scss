@@ -1,0 +1,23 @@
+.form{
+  display: flex;
+  padding: 20px 0 0 0;
+  &__input{
+
+  }
+
+  &__btn{
+    border: 2px solid rgb(36, 60, 103);
+    background: rgba(40, 107, 154, 0.8);
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  &__btn:hover{
+    border: 2px solid rgb(36, 60, 103);
+    background: rgba(40, 107, 154, 0.8);
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+}

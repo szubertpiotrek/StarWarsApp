@@ -1,0 +1,31 @@
+<div class="main__view">
+  <div class="container">
+    <div class="main__view--back">
+      <button class="main__view--back-button"><a routerLink="" class="main__view--back-link">Back</a></button>
+    </div>
+    <div>
+      <h1>{{planet.name}}</h1>
+      <table class="table">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Rotation Period</th>
+          <th scope="col">Climate</th>
+          <th scope="col">Diameter</th>
+          <th scope="col">Gravity</th>
+          <th scope="col">Terrain</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td scope="row">{{planet.rotation_period}}</td>
+          <td scope="row">{{planet.climate}}</td>
+          <td scope="row">{{planet.diameter}}</td>
+          <td scope="row">{{planet.gravity}}</td>
+          <td scope="row">{{planet.terrain}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <img src="src/laser.png" alt=""/>
+    </div>
+  </div>
+</div>

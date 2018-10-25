@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <nav>
+      <table class="table">
+        <thead class="thead-dark">
+          <th scope="col">#</th>
+          <th scope="col">Planet Name</th>
+          <th scope="col"></th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let planet of planets | slice:(limit*(page-1)):(limit*page); let i=index">
+          <td scope="row">{{limit*(page-1) + i+1}}</td>
+          <td><a class="main__table--link" routerLink="/view/{{limit*(page-1) + i+1}}">{{planet.name}}</a></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </nav>
+  </div>
+</div>

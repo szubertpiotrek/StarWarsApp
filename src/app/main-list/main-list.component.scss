@@ -1,0 +1,59 @@
+th,td{
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+tr:hover{
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+th{
+  font-size: 25px;
+}
+
+thead{
+  background: rgba(109, 109, 109, 0.8);
+}
+
+table{
+  margin: 50px;
+  width: 700px;
+}
+
+thead,tbody tr{
+  table-layout:fixed;
+}
+
+tbody{
+  height: 500px;
+  overflow:scroll;
+}
+
+tr:nth-child(even) {
+  background: rgba(204,204,204,0.8);
+  transition: 0.5s;
+}
+
+tr:nth-child(odd) {
+  background: rgba(55, 130, 195, 0.69);
+  transition: 0.5s;
+}
+
+tr:hover{
+  transform: scale(1.05);
+  background: rgba(41, 76, 126, 0.8);
+  transition: 0.5s;
+}
+
+.main__table--link{
+  text-decoration: none;
+  color: #000000;
+}
+
+.main__table--link:hover{
+  transition: 0.3s;
+  text-decoration: none;
+  color: #FFFFFF;
+}

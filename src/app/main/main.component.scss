@@ -1,0 +1,32 @@
+.main__backgroud{
+  background-image: url("/src/main-qimg-f24d45473620e44b1a5d6fca67f33df8.png");
+}
+
+.main__logo{
+  padding: 10px;
+  height: 100px;
+
+  &--img{
+    height: 100%;
+  }
+}
+
+.main__search{
+  display: flex;
+  flex-direction: column;
+}
+
+.main__search--nav{
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main__list{
+  height: 71.5vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("/src/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
